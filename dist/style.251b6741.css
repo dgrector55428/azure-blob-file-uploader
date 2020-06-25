@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: rgb(77, 76, 76); */
+}
+
+#uploader {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+  background: #21759b;
+  margin-top: 30px;
+  width: 50%;
+  box-shadow: 2px 4px 6px #989898;
+  color: #fff;
+  text-shadow: 2px 2px 3px black;
+}
+
+.imgUploadInput {
+  border: 0;
+  background: transparent;
+  width: 125%;
+  margin-right: 30px;
+  color: #fff;
+}
+
+#fileSubmitBtn {
+  margin: 10px 0 0 12px;
+}
+
+#btnWrapper {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional */
+}
+
+#formSubmitBtn {
+  margin-left: 5px;
+}
+
+#wordpress {
+  font-size: 250px;
+}
+
+
+/*# sourceMappingURL=/style.251b6741.css.map */

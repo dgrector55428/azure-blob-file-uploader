@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP File Uploader</title>
+    <link rel="stylesheet" href="./vendors/bootstrap/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="row" style="text-align: center; margin-top: 20px;">
+      <div class="col-12">
+        <h3>WordPress File Uploader</h3>
+      </div>
+    </div>
+    <div
+      class="container"
+      id="uploader"
+      style="margin-top: 20px; text-align: center;"
+    >
+      <div class="row">
+        <div class="col-4" style="text-align: center;">
+          <i class="fab fa-wordpress-simple" id="wordpress"></i>
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-12">
+              <h3>Upload a New File</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" style="margin-bottom: 10px;">
+              <small>Click button below to upload new file to storage</small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button class="btn btn-secondary btn-sm" id="select-button">
+                <i
+                  class="fas fa-cloud-upload-alt"
+                  style="margin-right: 5px;"
+                ></i>
+                Select and upload files
+              </button>
+              <input
+                type="file"
+                id="file-input"
+                multiple
+                style="display: none;"
+              />
+              <button class="btn btn-secondary btn-sm" id="list-button">
+                <i class="fas fa-list" style="margin-right: 5px;"></i>
+                List files
+              </button>
+              <button id="clearData" class="btn btn-danger btn-sm">
+                <i class="far fa-trash-alt" style="margin-right: 5px;"></i>
+                Clear data
+              </button>
+            </div>
+          </div>
+          <div id="feedback">
+            <div id="statusWrapper" class="row" style="margin-top: 20px;">
+              <div class="col-12" style="margin: 0 auto;">
+                <h4><b>Status:</b></h4>
+                <div id="status"></div>
+              </div>
+            </div>
+            <div id="filesWrapper" class="row" style="margin-top: 20px;">
+              <div class="col-12">
+                <h4><b>Files:</b></h4>
+                <div id="file-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./vendors/jquery/jquery-3.5.1.js"></script>
+    <script src="./vendors/bootstrap/bootstrap.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
